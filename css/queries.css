@@ -21,7 +21,7 @@
 @media screen and (max-width: 991px) {
     header {
         width: 90%;
-        padding-left: 25px;
+        padding-left: 0px;
     }
 
     .hero .hero-content {
