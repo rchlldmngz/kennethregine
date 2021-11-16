@@ -94,7 +94,7 @@ $(document).ready(function () {
                 // $('section.navigation').addClass('fixed');
                 $('header').css({
                     "border-bottom": "none",
-                    "padding": "10px 10px"
+                    "padding": "10px 0px"
                 });
                 $('header .member-actions').css({
                     "top": "20px",
@@ -106,7 +106,7 @@ $(document).ready(function () {
                 // $('section.navigation').removeClass('fixed');
                 $('header').css({
                     "border-bottom": "solid 1px rgba(255, 255, 255, 0.2)",
-                    "padding": "10px 10px"
+                    "padding": "10px 0px"
                 });
                 $('header .member-actions').css({
                     "top": "20px",
@@ -195,7 +195,7 @@ $(document).ready(function () {
             end: new Date('Jan 21, 2022 21:00'),
 
             // Event Address
-            address: 'CHURCH AT SAN AGUSTIN CHURCH, Intramuros, Manila',
+            address: 'SAN AGUSTIN CHURCH, Intramuros, Manila',
 
             // Event Description
             description: "We can't wait to see you on our big day."
