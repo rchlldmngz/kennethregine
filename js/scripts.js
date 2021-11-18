@@ -212,7 +212,8 @@ $(document).ready(function () {
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
 
-       if (MD5($('#invite_code').val()) !== 'e3251075554389fe91d17a794861d47b'
+       if (MD5($('#invite_code').val()) !== '81c2f886f91e18fe16d6f4e865877cb6'
+            && MD5($('#invite_code').val()) !== 'e3251075554389fe91d17a794861d47b'
             && MD5($('#invite_code').val()) !== '38181d991caac98be8fb2ecb8bd0f166'
             && MD5($('#invite_code').val()) !== '13d63838ef1fb6f34ca2dc6821c60e49'
             && MD5($('#invite_code').val()) !== 'e2c4a40d50b47094f571e40efead3900'
@@ -221,7 +222,9 @@ $(document).ready(function () {
             ) {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
         } else {
-            if (MD5($('#invite_code').val()) === 'e3251075554389fe91d17a794861d47b' && $('#extras').val() > 1) {
+            if (MD5($('#invite_code').val()) === '81c2f886f91e18fe16d6f4e865877cb6' && $('#extras').val() > 0) {
+                $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong>No companion allowed.'));
+            } else if (MD5($('#invite_code').val()) === 'e3251075554389fe91d17a794861d47b' && $('#extras').val() > 1) {
                 $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Only 1 companion is allowed.'));
             } else if  (MD5($('#invite_code').val()) === '38181d991caac98be8fb2ecb8bd0f166' && $('#extras').val() > 2) {
                 $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Only up to 2 companions is allowed.'));
